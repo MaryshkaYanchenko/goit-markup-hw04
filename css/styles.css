@@ -29,17 +29,21 @@ body{
     /* outline: 2px solid red; */
 }
 
+header{
+  border-bottom: 1px solid #ececec;
+}
+
 .header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ececec;
+    
    }
 
 .header-nav{
     display: flex;
-    /* justify-content: space-between;
-    align-items: center; */
+    /* justify-content: space-between; */
+    align-items: center;
 }
 
 .header-menu{
@@ -74,7 +78,7 @@ footer{
     font-weight: 700;
     line-height: 1.4;
     text-decoration: none;
-    padding: 25px 0;
+    padding: 24px 0;
     display: block;
 }
 
@@ -237,8 +241,8 @@ footer{
 }
 
 .team-card-description{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
+    /* padding-bottom: 30px; */
 }
 
 .team-card{
@@ -265,13 +269,20 @@ footer{
 }
 
 .kontacts{
-    color: #ffff;
+    color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     line-height: 1.7;
     text-decoration: none;
     /* margin: 9px 0 9px 0; */
     /* padding: 9px 0 9px 0; */
 
+}
+
+.kontacts-map{
+    color: #ffff;
+    font-style: normal;
+    line-height: 1.7;
+    text-decoration: none;
 }
 
 .kontacs-element{
@@ -317,7 +328,7 @@ ul{
     align-items: center;
     gap: 8px;
     /* margin-top: 73px; */
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .primary-button-portfolio{
@@ -364,6 +375,7 @@ ul{
 }
 
 .projects-name{
+    color: var(--color-text-primary);
     font-size: 18px;
     font-weight: 700;
     
@@ -389,12 +401,28 @@ ul{
     border-right: 1px solid #eeee;
 }
 
+.projects-link{
+    text-decoration: none;
+}
+
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
+.visually-hidden{
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+}
 /* h1,
 h2, h3, p, ul {
     margin: 0;
