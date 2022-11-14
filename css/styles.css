@@ -55,7 +55,7 @@ header{
 
 .section{
     padding-top: 94px;
-    padding-bottom: 0;
+    padding-bottom: 94px;
 }
 
 footer{
@@ -91,7 +91,7 @@ footer{
     line-height: 1.4;
     text-decoration: none;
 
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 
 .logo-primary-footer > span {
@@ -133,38 +133,34 @@ footer{
 .mail-tel-link{
     display: flex;
     align-items: center;
-    color: var(--color-text-primary);
+    color: var(--color-text-secondary);
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
     margin-right: 50px;
     padding: 32px 0;
     
+    fill: currentColor;
 }
 
 
-.mail-tel-link:hover{
-    color: var(--color-brand)
+.mail-tel-link:hover {
+    color: var(--color-brand);
 }
 
-.mail-tel-link:focus{
-    color: var(--color-brand)
+.mail-tel-link:focus { 
+    color: var(--color-brand);
 }
-
-
 
 .mail-tel-icon{
-    /* display: flex;
-    align-items: center; */
-    fill: var(--color-text-secondary);
     margin-right: 10px;
 }
 
-.mail-tel-icon:hover{
+.mail-tel-icon:hover {
     fill: var(--color-brand);
 }
 
-.mail-tel-icon:focus{
+.mail-tel-icon:focus {
     fill: var(--color-brand);
 }
 
@@ -216,6 +212,11 @@ footer{
     background-color:#188ce8;
 }
 /*what are we doing*/
+
+.section-we{
+    padding: 0px;
+}
+
 .section-title{
     color: var(--color-text-primary);
     font-size: 36px;
@@ -228,6 +229,10 @@ footer{
 .section-img{
     display: flex;
     gap: 30px;
+}
+
+.what-are-we-do{
+    width: calc(100%/3 - 30px/3*2);
 }
 
 .advantage-section{
@@ -285,11 +290,13 @@ footer{
 
 .team-card-box{
     background-color: var(--color-background);
-    flex-basis: calc(100% / 3 - var(--projects-set-gap));
+    /* flex-basis: calc(100% / 3 - var(--projects-set-gap)); */
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    width: calc(100%/4 - 30px/4*3);
 }
 
 .team-card-description{
@@ -340,6 +347,11 @@ footer{
     fill: var(--color-background);
 }
 
+.team-card-social-link:focus{
+    background-color: var(--color-brand);
+    fill: var(--color-background);
+}
+
 /*clients*/
 
 .clients-section{
@@ -347,17 +359,18 @@ footer{
     gap: 30px;
 }
 
-.clients-box{
-    flex-basis: calc(100% / 3 - var(--projects-set-gap));
+.client-box{
+    width: calc(100%/6 - 30px/6*5);
+    height: 92px;
 }
 
-.client-img{
+.client-icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 92px;
-    width: 170px;
-    margin-bottom: 94px;
+    height: 100%;
+    width: 100%;
+    /* margin-bottom: 94px; */
 
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -367,19 +380,25 @@ footer{
     /* outline: 1px solid red; */
 }
 
-.client-img:hover{
+.client-icon:hover{
+    fill: var(--color-brand);
+    border: 1px solid var(--color-brand);
+}
+
+.client-icon:focus{
     fill: var(--color-brand);
     border: 1px solid var(--color-brand);
 }
 
 .feedback-container{
     display: flex;
+    align-items: baseline;
 }
 
 .kontacts-block{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+    /* display: flex;
+    /* flex-direction: column; */
+    /* align-items: baseline; */ */
 }
 
 .kontacts-section{
@@ -435,16 +454,15 @@ ul{
 }
 
 .social-block{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+    margin-left: 70px;
+    /* margin-top: 72px; */
 }
 
 .social-networks{
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-left: 70px;
+    
 }
 
 .social-networks-title{
@@ -453,9 +471,9 @@ ul{
     font-weight: 700;
     line-height: 1.1;
     text-align: left;
-    margin-top: 72px;
+    
     margin-bottom: 20px;
-    margin-left: 70px;
+    
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -472,6 +490,10 @@ ul{
 }
 
 .social-link:hover{
+    background-color: var(--color-brand);
+}
+
+.social-link:focus{
     background-color: var(--color-brand);
 }
 
@@ -538,9 +560,14 @@ ul{
     flex-basis: calc(100% / 3 - var(--projects-set-gap));
     margin-left: var(--projects-set-gap);
     margin-top: var(--projects-set-gap);
+}
 
+.projects:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
+.projects:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-name{
