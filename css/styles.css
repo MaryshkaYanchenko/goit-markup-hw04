@@ -211,6 +211,11 @@ footer{
 .primery-button:hover{
     background-color:#188ce8;
 }
+
+.primery-button:focus{
+    background-color: #188ce8;
+}
+
 /*what are we doing*/
 
 .section-we{
@@ -374,7 +379,7 @@ footer{
 
     border: 1px solid #afb1b8;
     border-radius: 4px;
-
+    outline: none;
     fill: var(--color-icon);
 
     /* outline: 1px solid red; */
@@ -550,7 +555,7 @@ ul{
     margin-left: calc(-1 * var(--projects-set-gap));
     margin-top: calc(-1 * var(--projects-set-gap));
 
-    margin-bottom: 115px;
+    /* margin-bottom: 115px; */
 
 }
 
@@ -562,13 +567,13 @@ ul{
     margin-top: var(--projects-set-gap);
 }
 
-.projects:hover{
+/* .projects:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
 .projects-name{
     color: var(--color-text-primary);
@@ -598,7 +603,15 @@ ul{
 }
 
 .projects-link{
+    display: block;
     text-decoration: none;
+    
+}
+
+.projects-link:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06), 
+                1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 img {
